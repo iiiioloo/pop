@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-image: linear-gradient(to bottom right, #ff47f9, #68b9ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .card {
+            width: 500px;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            color: #e74c3c;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 60px;
+        }
+        
+        img {
+            max-width: 80%;
+            height: auto;
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        img:hover {
+            transform: scale(1.1);
+        }
+        
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .confetti span {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #e74c3c;
+            animation: confetti 5s linear infinite;
+        }
+        
+        @keyframes confetti {
+            0% {transform: translateY(0); opacity: 1;}
+            100% {transform: translateY(100vh); opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>С Днём Рождения, Александр!</h1>
+        <p>Пусть каждый твой день будет наполнен радостью, улыбками и новыми возможностями. Желаю здоровья, счастья и исполнения всех желаний.</p>
+        <p>Сегодня особенный день — ты отмечаешь своё 25-летие! Поздравляю тебя с этим важным этапом в жизни. Пусть каждый день приносит тебе радость, вдохновение и новые возможности для роста и развития.
+
+            В 25 лет перед тобой открыты все дороги. Ты полон сил, энергии и амбиций, и я уверен, что впереди тебя ждут великие свершения. Пусть твои мечты становятся реальностью, а цели — достижимыми шаг за шагом.
+            
+            Желаю тебе крепкого здоровья, нескончаемого счастья и успехов во всех начинаниях. Пусть рядом всегда будут верные друзья и близкие люди, готовые поддержать и разделить с тобой самые важные моменты.
+            
+            С праздником, Александр! Пусть этот год станет началом нового увлекательного пути, полного открытий и радости.</p>
+        <p>Ну вот, наконец-то ты достиг возраста, когда можно официально считать себя взрослым человеком… хотя, честно говоря, мы всё равно видим в тебе того самого весёлого парня, который вечно шутит и не принимает жизнь слишком серьёзно. И это здорово!
+
+            В 25 лет ты уже знаешь, что пиво лучше пить вечером, а не утром, и что сон до обеда — это не лень, а необходимость. Ты понимаешь, что самое важное в жизни — это друзья, которые готовы прийти на помощь в любое время суток, и, конечно, торт, который всегда должен быть свежим и вкусным.
+            
+            Так что, дорогой Александр, пожелаем тебе продолжать оставаться таким же жизнерадостным и неунывающим, каким ты был всегда. Пусть твоя жизнь будет полна приключений, смеха и неожиданных сюрпризов. И помни, что возраст — это всего лишь цифра, а главное — это то, как ты себя чувствуешь внутри.
+            
+            С днём рождения! Пусть каждый день будет как праздник, а каждая минута — как момент счастья.</p>
+        <img src="https://i.pinimg.com/originals/09/04/df/0904df6005d29e0c8a37e998796c8e5b.jpg" alt="Тортик">
+        <div class="confetti">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+</body>
+</html>
